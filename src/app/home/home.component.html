@@ -1,0 +1,23 @@
+ 
+   <table>  
+    <thead>
+        <tr>
+            <th>Country Name</th>
+            <th>Dog Type</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td> <div class="" *ngFor="let country of countryName">
+           <td> {{country}} </td>
+          </div>
+        </td>
+      <td>
+          <div class="" *ngFor="let type of dogType">
+           <td> {{type[0]?type[0]:'unknown'}}</td>
+           </div>
+            </td> 
+      </tr>
+      </tbody>
+   </table>
+   <button (click)="logout()">Log Out</button>

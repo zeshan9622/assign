@@ -1,0 +1,23 @@
+
+<div class="bg">
+  <div class="container" >
+      <div class="row" >
+      <div class="col-md-12">
+
+<form [formGroup]="loginForm" >
+  <div>
+
+     <label>Username: </label>   
+      <input id="email"  formControlName="email" placeholder="Enter username" >
+    <br>
+    <br>
+     <label>Password: </label>   
+      <input type="password" id="password" formControlName="password" placeholder="Enter password">
+    <br><a class="forgot" (click)="forgotPassword()"> Forgot password? </a>
+    <br><button type="submit" [disabled]="!loginForm.valid" (click)="login()">LogIn</button>
+   <br><br> </div>
+</form>
+</div>
+</div>
+</div>
+</div>
